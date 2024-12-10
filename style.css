@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+
+.intro {
+  background-color: #e0f7fa;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.noticias, .cursos {
+  margin-bottom: 20px;
+}
+
+.imagem-rural {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.imagem-rural img{
+  width: 700px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+h1, h2 {
+  color: #003366;
+}
+
+.noticias {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 10px;
+}
+
+.noticia-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 40px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  margin-right: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 15px 15px 8px rgba(0, 0, 0, 0.1);
+}
+
+.noticia-item:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.noticia-item a {
+  color: #003366;
+  text-decoration: none;
+}
+
+.noticia-item a:hover {
+  text-decoration: underline;
+}
+
+.cursos {
+  padding: 20px;
+}
+
+.cursos h4 {
+  margin-bottom: 10px;
+}
+.cursos-item {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.cursos-item h4 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.cursos-item p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.cursos-item ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.cursos-item li {
+  margin-bottom: 5px;
+}
+
+.cursos-item ul li b {
+  color: #007BFF;
+}
+.pesquisas {
+  padding: 20px;
+}
+
+.pesquisa-item {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.pesquisa-item h4 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.pesquisa-item p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.pesquisa-item ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.pesquisa-item li {
+  margin-bottom: 5px;
+}
+
+.pesquisa-item li b {
+  color: #007BFF;
+}
+
+.contatos {
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-top: 1px solid #ccc;
+}
+
+.contatos h2 {
+  margin-bottom: 15px;
+}
+
+.contatos h4 {
+  maring-bottom: 10px;
+}
+
+.contato-form {
+  margin-top: 20px;
+  display: flex;
+}
+
+.contato-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.contato-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contato-form input,
+.contato-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+.contato-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  align-self: flex-end; 
+}
+
+.contato-form button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  .intro, .noticias, .cursos {
+      padding: 15px;
+  }
+}
